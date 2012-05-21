@@ -59,6 +59,8 @@ qt4.HEADERS
     , "gettingstartedwelcomepage.h"
     , "exampleslistmodel.h"
     , "screenshotcropper.h"
+    , "qmldumptool.cpp"
+    , "gettingstartedwelcomepage.cpp"
 }
 
 

@@ -89,12 +89,14 @@ struct QMLJSEDITOR_EXPORT Declaration
     { }
 };
 
+using QmlJSTools::SemanticInfo;
+
 class QMLJSEDITOR_EXPORT QmlJSTextEditorWidget : public TextEditor::BaseTextEditorWidget
 {
     Q_OBJECT
 
     // used e.g. in qmljsprofiler
-    Q_PROPERTY(QmlJSTools::SemanticInfo semanticInfo READ semanticInfo)
+    Q_PROPERTY(SemanticInfo semanticInfo READ semanticInfo)
 
 public:
     QmlJSTextEditorWidget(QWidget *parent = 0);
@@ -102,7 +104,7 @@ public:
 
     virtual void unCommentSelection();
 
-    QmlJSTools::SemanticInfo semanticInfo() const;
+    SemanticInfo semanticInfo() const;
     bool isSemanticInfoOutdated() const;
     int editorRevision() const;
 
@@ -144,7 +146,7 @@ private slots:
     void updateUses();
     void updateUsesNow();
 
-    void acceptNewSemanticInfo(const QmlJSTools::SemanticInfo &semanticInfo);
+    void acceptNewSemanticInfo(const SemanticInfo &semanticInfo);
     void onCursorPositionChanged();
     void onRefactorMarkerClicked(const TextEditor::RefactorMarker &marker);
 
@@ -187,7 +189,7 @@ private:
     QTextCharFormat m_occurrenceRenameFormat;
 
     Internal::SemanticInfoUpdater *m_semanticInfoUpdater;
-    QmlJSTools::SemanticInfo m_semanticInfo;
+    SemanticInfo m_semanticInfo;
     int m_futureSemanticInfoRevision;
 
     QList<TextEditor::QuickFixOperation::Ptr> m_quickFixes;
