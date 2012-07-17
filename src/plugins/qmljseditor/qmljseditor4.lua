@@ -119,7 +119,7 @@ files
 }
 
 
-links 
+links
 {
       "Utils"
     , "QmlJSTools"
@@ -130,12 +130,13 @@ links
     , "extensionsystem"
     , "aggregation"
     , "QmlEditorWidgets"
+	, "QmlJS"
 }
 
-qt4.RESOURCES { "qmljseditor.qrc" } 
+qt4.RESOURCES { "qmljseditor.qrc" }
 --files { "QmlJSEditor.mimetypes.xml" }
 
-qt4.FORMS 
+qt4.FORMS
 {
       "quicktoolbarsettingspage.ui"
     , "qmljscomponentnamedialog.ui"
