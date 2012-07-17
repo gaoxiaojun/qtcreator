@@ -47,7 +47,7 @@ defines
     , "QT_CREATOR"
 }
 
-links 
+links
 {
       "QmlJS"
     , "Core"
@@ -56,11 +56,12 @@ links
     , "TextEditor"
     , "ProjectExplorer"
     , "QtSupport"
-    , "CppTools" 
+    , "CppTools"
     , "Utils"
     , "LanguageUtils"
     , "extensionsystem"
     , "aggregation"
+	, "CPlusPlus"
 }
 
 

@@ -131,6 +131,8 @@ links
     , "aggregation"
     , "QmlEditorWidgets"
 	, "QmlJS"
+	, "ProjectExplorer"
+	, "LanguageUtils"
 }
 
 qt4.RESOURCES { "qmljseditor.qrc" }

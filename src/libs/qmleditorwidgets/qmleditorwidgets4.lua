@@ -6,11 +6,11 @@ language "C++"
 
 qt4.QtPre()
 
-qt4.QT 
-{ 
+qt4.QT
+{
       "core"
     , "declarative"
-    , "gui" 
+    , "gui"
     , "script"
 }
 
@@ -26,7 +26,7 @@ defines
       "QWEAKPOINTER_ENABLE_ARROW"
     , "BUILD_QMLEDITORWIDGETS_LIB"
     , "QT_CREATOR"
-}    
+}
 
 qt4.RESOURCES
 {
@@ -89,6 +89,11 @@ qt4.FORMS
     , "contextpanewidgetimage.ui"
     , "contextpanewidgetborderimage.ui"
     , "contextpanetext.ui"
+}
+
+links
+{
+	"QmlJS"
 }
 
 qt4.Configure()
