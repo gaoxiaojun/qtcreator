@@ -109,6 +109,10 @@ void SemanticInfoUpdater::run()
         m_mutex.unlock();
 
         if (! cancelledOrNewData) {
+			QmlJS::AST::Node* node = info.document->ast();
+			int rev = info.revision();
+			
+
             m_lastSemanticInfo = info;
             emit updated(info);
         }

@@ -39,9 +39,13 @@ dofile("src/plugins/cpptools/cpptools4.lua")
 dofile("src/plugins/qmljstools/qmljstools4.lua")
 dofile("src/plugins/qmljseditor/qmljseditor4.lua")
 
+dofile("share/qtcreator/qml/qmlpuppet/qmlpuppet/qmlpuppet4.lua")
+
 dofile("src/libs/aggregation/aggregation4.lua")
 dofile("src/libs/extensionsystem/extensionsystem4.lua")
 dofile("src/libs/qmljs/qmljs4.lua")
 dofile("src/libs/languageutils/languageutils4.lua")
 dofile("src/libs/cplusplus/cplusplus4.lua")
 dofile("src/libs/qmleditorwidgets/qmleditorwidgets4.lua")
+dofile("src/plugins/testplugin/testplugin4.lua")
+dofile("src/plugins/baseeditor/baseeditor4.lua")

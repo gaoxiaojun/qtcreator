@@ -25,6 +25,10 @@ qt4.RESOURCES
     solution().basedir .. "/share/qtcreator/qml/qmlpuppet/qmlpuppet.qrc"
 }
 
+if (os.is("windows")) then
+    includedirs { os.getenv("QTDIR") .. "/mkspecs/win32-msvc2010" }
+end
+
 instances4.Configure()
 puppet_commands4.Configure()
 puppet_container4.Configure()
